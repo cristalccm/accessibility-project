@@ -636,7 +636,7 @@
     .badge-beginner { background: #d4edda; color: #1a5c30; }
     .badge-pro { background: #cfe2ff; color: #0a3275; }
     .badge-sale { background: #fde8e0; color: var(--rust); }
-    .badge-new { background: var(--surface); color: var(--gold); }
+    .badge-new { background: var(--surface); color: var(--rust); }
     .badge-rental { background: #f3e8ff; color: #5a1f8a; }
  
     .level-indicator {
