@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crescendo Music Supply — Band, Orchestra & Beyond</title>
+  <meta name="description" content="Instruments, sheet music, and accessories for beginner band and orchestra students, advancing players, and seasoned professionals. Expert guidance at every level." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="assets/css/style.css">
+ 
+</head>
+<body>
+ 
+  <!-- SKIP TO MAIN -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+ 
+  <!-- ANNOUNCEMENT -->
+  <div role="region" aria-label="Store announcement">
+    <p class="announce-bar">
+      🎼 Back-to-school instrument rentals now available — <a href="#rental">Learn more</a> &nbsp;|&nbsp; Free shipping on orders $60+
+    </p>
+  </div>
+ 
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <a href="/" class="nav-logo" aria-label="Crescendo Music Supply — Home">
+        <span class="logo-word">Crescendo</span>
+        <span class="logo-sub">Music Supply</span>
+      </a>
+ 
+      <div class="header-search" role="search">
+        <label for="site-search" class="sr-only">Search instruments, sheet music, and accessories</label>
+        <span class="search-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </span>
+        <input
+          id="site-search"
+          type="search"
+          class="search-input"
+          placeholder="Search instruments, brands, sheet music…"
+          autocomplete="off"
+          aria-label="Search products"
+        />
+      </div>
+ 
+      <div class="header-actions">
+        <button class="btn-icon" type="button" aria-label="My account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="btn-icon" type="button" aria-label="View cart — 0 items" id="cart-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-badge" id="cart-badge" aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+ 
+    <!-- CATEGORY NAV -->
+    <nav class="nav-bar" aria-label="Product categories">
+      <div class="nav-bar-inner" role="list">
+        <a href="#strings" class="nav-link active" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">🎻</span> Strings
+        </a>
+        <a href="#winds" class="nav-link" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">🎺</span> Brass & Winds
+        </a>
+        <a href="#woodwinds" class="nav-link" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">🎷</span> Woodwinds
+        </a>
+        <a href="#percussion" class="nav-link" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">🥁</span> Percussion
+        </a>
+        <a href="#piano" class="nav-link" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">🎹</span> Piano & Keys
+        </a>
+        <a href="#sheet-music" class="nav-link" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">🎼</span> Sheet Music
+        </a>
+        <a href="#accessories" class="nav-link" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">🎵</span> Accessories
+        </a>
+        <a href="#rental" class="nav-link" role="listitem">
+          <span class="nav-link-icon" aria-hidden="true">📋</span> Rentals
+        </a>
+      </div>
+    </nav>
+  </header>
+ 
+  <!-- LIVE CART TOAST -->
+  <div id="cart-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+ 
+  <!-- MAIN -->
+  <main id="main-content" tabindex="-1">
+ 
+    <!-- ── HERO ── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            Band · Orchestra · Studio · Stage
+          </p>
+          <h1 id="hero-heading">
+            Every musician starts<br><em>somewhere.</em>
+          </h1>
+          <p class="hero-desc">
+            From a student's first rental violin to a professional's concert-grade oboe — we have the instruments, expertise, and support to guide every player at every stage.
+          </p>
+          <div class="hero-cta">
+            <a href="#audience-paths" class="btn-primary">
+              Find Your Fit
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+            <a href="#rental" class="btn-outline-lt">
+              Rent an Instrument
+            </a>
+          </div>
+        </div>
+ 
+        <!-- AUDIENCE PATH CARDS (hero) -->
+        <div class="hero-paths" aria-label="Shop by experience level">
+          <a href="#beginner" class="path-card" aria-label="Beginner students — Starter instruments and rentals">
+            <span class="path-icon" aria-hidden="true">🎒</span>
+            <div class="path-body">
+              <p class="path-label">Just starting out</p>
+              <p class="path-name">Beginner Students</p>
+              <p class="path-desc">Starter instruments, rentals, method books</p>
+            </div>
+            <span class="path-arrow" aria-hidden="true">›</span>
+          </a>
+          <a href="#intermediate" class="path-card" aria-label="Advancing players — Step-up instruments and lesson materials">
+            <span class="path-icon" aria-hidden="true">🎓</span>
+            <div class="path-body">
+              <p class="path-label">Growing musicians</p>
+              <p class="path-name">Advancing Players</p>
+              <p class="path-desc">Step-up instruments, lesson materials</p>
+            </div>
+            <span class="path-arrow" aria-hidden="true">›</span>
+          </a>
+          <a href="#pro" class="path-card" aria-label="Professional musicians — Professional instruments and accessories">
+            <span class="path-icon" aria-hidden="true">🏅</span>
+            <div class="path-body">
+              <p class="path-label">Seasoned performers</p>
+              <p class="path-name">Professionals</p>
+              <p class="path-desc">Professional-grade instruments, accessories</p>
+            </div>
+            <span class="path-arrow" aria-hidden="true">›</span>
+          </a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── AUDIENCE PATHWAYS ── -->
+    <section id="audience-paths" class="paths-section" aria-labelledby="paths-heading">
+      <div class="section-inner">
+        <div class="section-header">
+          <p class="section-tag" aria-hidden="true">Shop by level</p>
+          <h2 id="paths-heading">Find your <em>path</em></h2>
+          <p class="section-sub">Whether you're picking up your first instrument or performing on stage, we have the right gear and guidance for you.</p>
+        </div>
+ 
+        <div class="paths-grid" role="list" aria-label="Musician experience levels">
+ 
+          <article class="audience-card beginner" id="beginner" role="listitem" aria-labelledby="beg-title">
+            <span class="aud-emoji" aria-hidden="true">🎒</span>
+            <p class="aud-level">Level 1</p>
+            <h3 id="beg-title" class="aud-title">Beginner Students</h3>
+            <p class="aud-desc">
+              New to band or orchestra? We make starting easy. Our student instruments are durable, playable, and priced for families. We also offer instrument rentals with the option to apply rent toward purchase.
+            </p>
+            <nav class="aud-links" aria-label="Beginner shopping links">
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Starter Instrument Rentals
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Beginner Band Packages
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Method Books & Practice Aids
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                School Supply Lists
+              </a>
+            </nav>
+          </article>
+ 
+          <article class="audience-card intermediate" id="intermediate" role="listitem" aria-labelledby="int-title">
+            <span class="aud-emoji" aria-hidden="true">🎓</span>
+            <p class="aud-level">Level 2–3</p>
+            <h3 id="int-title" class="aud-title">Advancing Players</h3>
+            <p class="aud-desc">
+              Ready to step up from a starter instrument? Improving your equipment can unlock new possibilities in tone and playability. Our staff helps you find the right upgrade at the right time.
+            </p>
+            <nav class="aud-links" aria-label="Advancing player shopping links">
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Step-Up Instruments
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Solo & Ensemble Music
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Upgraded Accessories
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Trade-In Program
+              </a>
+            </nav>
+          </article>
+ 
+          <article class="audience-card professional" id="pro" role="listitem" aria-labelledby="pro-title">
+            <span class="aud-emoji" aria-hidden="true">🏅</span>
+            <p class="aud-level">Professional</p>
+            <h3 id="pro-title" class="aud-title">Professional Musicians</h3>
+            <p class="aud-desc">
+              We stock professional-grade instruments from top makers, alongside premium accessories and specialty items. Our woodwind and brass repair technicians are on staff for maintenance and custom setups.
+            </p>
+            <nav class="aud-links" aria-label="Professional musician shopping links">
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Professional Instruments
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Repair & Maintenance
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Premium Reeds & Strings
+              </a>
+              <a class="aud-link" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                Director Accounts
+              </a>
+            </nav>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── INSTRUMENT CATEGORIES ── -->
+    <section id="strings" class="instr-section" aria-labelledby="instr-heading">
+      <div class="section-inner">
+        <div class="section-header">
+          <p class="section-tag" aria-hidden="true">Browse instruments</p>
+          <h2 id="instr-heading">Shop by <em>instrument</em></h2>
+          <p class="section-sub">Orchestral strings, concert band, jazz, and more — available for beginners through professionals.</p>
+        </div>
+ 
+        <!-- Filter tabs -->
+        <div role="tablist" aria-label="Filter instruments by section" class="instr-tabs">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="instr-all">All Sections</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-strings">Strings</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-winds">Brass</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-woodwinds">Woodwinds</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-perc">Percussion</button>
+        </div>
+ 
+        <ul id="instr-all" class="instr-grid" role="list" aria-label="All instrument categories">
+          <li>
+            <a class="instr-card" href="#" aria-label="Violin — 58 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🎻</span>
+              <span class="instr-name">Violin</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">58 instruments</span>
+            </a>
+          </li>
+          <li>
+            <a class="instr-card" href="#" aria-label="Cello — 34 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🎻</span>
+              <span class="instr-name">Cello</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">34 instruments</span>
+            </a>
+          </li>
+          <li>
+            <a class="instr-card" href="#" aria-label="Trumpet — 42 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🎺</span>
+              <span class="instr-name">Trumpet</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">42 instruments</span>
+            </a>
+          </li>
+          <li>
+            <a class="instr-card" href="#" aria-label="Clarinet — 47 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🎷</span>
+              <span class="instr-name">Clarinet</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">47 instruments</span>
+            </a>
+          </li>
+          <li>
+            <a class="instr-card" href="#" aria-label="Flute — 39 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🎵</span>
+              <span class="instr-name">Flute</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">39 instruments</span>
+            </a>
+          </li>
+          <li>
+            <a class="instr-card" href="#" aria-label="Saxophone — 31 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🎷</span>
+              <span class="instr-name">Saxophone</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">31 instruments</span>
+            </a>
+          </li>
+          <li>
+            <a class="instr-card" href="#" aria-label="Percussion — 25 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🥁</span>
+              <span class="instr-name">Percussion</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">25 instruments</span>
+            </a>
+          </li>
+          <li>
+            <a class="instr-card" href="#" aria-label="French Horn — 18 instruments, beginner to professional">
+              <span class="instr-emoji" aria-hidden="true">🎺</span>
+              <span class="instr-name">French Horn</span>
+              <span class="instr-range">Beg → Pro</span>
+              <span class="instr-count">18 instruments</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- ── FEATURED PRODUCTS ── -->
+    <section class="products-section" aria-labelledby="products-heading">
+      <div class="section-inner">
+        <div class="section-header">
+          <p class="section-tag" aria-hidden="true">Staff picks</p>
+          <h2 id="products-heading">Featured <em>instruments</em></h2>
+          <p class="section-sub">Hand-selected by our musician staff across every level.</p>
+        </div>
+ 
+        <!-- Level filter -->
+        <div class="products-filter" role="group" aria-label="Filter products by level">
+          <span class="filter-label" aria-hidden="true">Level:</span>
+          <button class="filter-btn active" type="button" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Beginner</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Intermediate</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Professional</button>
+        </div>
+ 
+        <ul class="products-grid" role="list" aria-label="Featured products">
+ 
+          <!-- Product 1 -->
+          <li>
+            <article class="product-card" aria-labelledby="p1-name">
+              <div class="product-img-wrap" role="img" aria-label="Student violin outfit with bow and case, 4/4 size, natural wood finish">
+                <span aria-hidden="true">🎻</span>
+                <span class="product-badge badge-beginner">Beginner</span>
+                <div class="level-indicator" aria-hidden="true">
+                  <span class="level-dot filled" title="Beginner level"></span>
+                  <span class="level-dot" title="Intermediate level"></span>
+                  <span class="level-dot" title="Professional level"></span>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <p class="product-cat">Strings · Violin</p>
+                </div>
+                <h3 id="p1-name">Cremona SV-75 Student Outfit</h3>
+                <p class="product-desc">Full 4/4 student violin with solid spruce top, bow, rosin, and case. Ideal for beginners joining school orchestra.</p>
+                <div class="product-footer">
+                  <div>
+                    <p class="product-price">$229 <span class="sr-only">US dollars</span></p>
+                    <span class="price-rental">Or rent from $18/mo</span>
+                  </div>
+                  <button class="btn-add-cart" type="button" aria-label="Add Cremona SV-75 Student Violin to cart">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+ 
+          <!-- Product 2 -->
+          <li>
+            <article class="product-card" aria-labelledby="p2-name">
+              <div class="product-img-wrap" role="img" aria-label="Student Bb clarinet in silver-plated finish with case">
+                <span aria-hidden="true">🎷</span>
+                <span class="product-badge badge-beginner">Beginner</span>
+                <div class="level-indicator" aria-hidden="true">
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot"></span>
+                  <span class="level-dot"></span>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <p class="product-cat">Woodwinds · Clarinet</p>
+                </div>
+                <h3 id="p2-name">Yamaha YCL-255 Student Clarinet</h3>
+                <p class="product-desc">ABS resin body, silver-plated keys, consistent intonation. The trusted choice of band directors for 30+ years.</p>
+                <div class="product-footer">
+                  <div>
+                    <p class="product-price">$499 <span class="sr-only">US dollars</span></p>
+                    <span class="price-rental">Or rent from $22/mo</span>
+                  </div>
+                  <button class="btn-add-cart" type="button" aria-label="Add Yamaha YCL-255 Student Clarinet to cart">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+ 
+          <!-- Product 3 -->
+          <li>
+            <article class="product-card" aria-labelledby="p3-name">
+              <div class="product-img-wrap" role="img" aria-label="Intermediate silver-plated flute with open-hole keys and B foot joint">
+                <span aria-hidden="true">🎵</span>
+                <span class="product-badge badge-new">Step-Up</span>
+                <div class="level-indicator" aria-hidden="true">
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot"></span>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <p class="product-cat">Woodwinds · Flute</p>
+                </div>
+                <h3 id="p3-name">Pearl PF-525 Intermediate Flute</h3>
+                <p class="product-desc">Open-hole keys, B foot joint, silver-plated mechanism. A perfect step-up for advancing flutists moving into all-state auditions.</p>
+                <div class="product-footer">
+                  <div>
+                    <p class="product-price">$749 <span class="sr-only">US dollars</span></p>
+                  </div>
+                  <button class="btn-add-cart" type="button" aria-label="Add Pearl PF-525 Intermediate Flute to cart">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+ 
+          <!-- Product 4 -->
+          <li>
+            <article class="product-card" aria-labelledby="p4-name">
+              <div class="product-img-wrap" role="img" aria-label="Professional Bb trumpet in lacquer finish with case and mouthpiece">
+                <span aria-hidden="true">🎺</span>
+                <span class="product-badge badge-pro">Professional</span>
+                <div class="level-indicator" aria-hidden="true">
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot filled"></span>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <p class="product-cat">Brass · Trumpet</p>
+                </div>
+                <h3 id="p4-name">Bach Stradivarius 37 Trumpet</h3>
+                <p class="product-desc">The gold standard for professional trumpet players. Used in symphony orchestras and on stages worldwide. Lacquer finish.</p>
+                <div class="product-footer">
+                  <div>
+                    <p class="product-price">$3,499 <span class="sr-only">US dollars</span></p>
+                  </div>
+                  <button class="btn-add-cart" type="button" aria-label="Add Bach Stradivarius 37 Professional Trumpet to cart">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+ 
+          <!-- Product 5 -->
+          <li>
+            <article class="product-card" aria-labelledby="p5-name">
+              <div class="product-img-wrap" role="img" aria-label="Student snare drum practice pad with drumsticks">
+                <span aria-hidden="true">🥁</span>
+                <span class="product-badge badge-sale">15% Off</span>
+                <div class="level-indicator" aria-hidden="true">
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot"></span>
+                  <span class="level-dot"></span>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <p class="product-cat">Percussion · Snare</p>
+                </div>
+                <h3 id="p5-name">Ludwig Accent Student Snare Kit</h3>
+                <p class="product-desc">Starter snare drum, 2B sticks, practice pad, and stand. Everything a new percussionist needs. Band-director approved.</p>
+                <div class="product-footer">
+                  <div>
+                    <p class="product-price">
+                      $169
+                      <span class="price-old" aria-label="Original price $199">$199</span>
+                      <span class="sr-only">US dollars, on sale</span>
+                    </p>
+                    <span class="price-rental">Or rent from $14/mo</span>
+                  </div>
+                  <button class="btn-add-cart" type="button" aria-label="Add Ludwig Accent Student Snare Kit to cart">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+ 
+          <!-- Product 6 -->
+          <li>
+            <article class="product-card" aria-labelledby="p6-name">
+              <div class="product-img-wrap" role="img" aria-label="Digital upright practice cello in black finish with headphone output">
+                <span aria-hidden="true">🎻</span>
+                <span class="product-badge badge-new">New</span>
+                <div class="level-indicator" aria-hidden="true">
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot filled"></span>
+                  <span class="level-dot"></span>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <p class="product-cat">Strings · Cello</p>
+                </div>
+                <h3 id="p6-name">NS Design WAV Electric Cello</h3>
+                <p class="product-desc">Silent practice cello with headphone output, full-size feel, and acoustic trigger pickup. Perfect for apartment practice.</p>
+                <div class="product-footer">
+                  <div>
+                    <p class="product-price">$1,199 <span class="sr-only">US dollars</span></p>
+                  </div>
+                  <button class="btn-add-cart" type="button" aria-label="Add NS Design WAV Electric Cello to cart">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+ 
+        </ul>
+ 
+        <div style="margin-top:2.5rem; text-align:center;">
+          <a href="#" class="btn-outline">
+            View All Instruments
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── RENTAL BANNER ── -->
+    <section id="rental" class="rental-banner" aria-labelledby="rental-heading">
+      <div class="rental-inner">
+        <div>
+          <span class="rental-badge-top" aria-label="Popular with parents">Popular with parents &amp; directors</span>
+          <h2 id="rental-heading">Instrument rentals — <em>simple &amp; flexible</em></h2>
+          <p>Perfect for new students who may switch instruments. Rent month-to-month with no long-term commitment, and apply your payments toward purchasing the instrument if you love it.</p>
+          <div class="rental-features" aria-label="Rental program benefits">
+            <div class="rental-feat">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Free maintenance coverage</span>
+            </div>
+            <div class="rental-feat">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Switch instruments anytime</span>
+            </div>
+            <div class="rental-feat">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Rent applies toward purchase</span>
+            </div>
+            <div class="rental-feat">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Cancel anytime, no fees</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-primary" style="flex-shrink:0; white-space:nowrap;">
+          Start a Rental
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </section>
+ 
+    <!-- ── EXTRAS: SHEET MUSIC & ACCESSORIES ── -->
+    <section id="sheet-music" class="extras-section" aria-labelledby="extras-heading">
+      <div class="section-inner">
+        <div class="section-header">
+          <p class="section-tag" aria-hidden="true">Essentials</p>
+          <h2 id="extras-heading">Music, books &amp; <em>accessories</em></h2>
+          <p class="section-sub">Everything a musician needs beyond the instrument itself.</p>
+        </div>
+ 
+        <ul class="extras-grid" role="list" aria-label="Music accessories and materials">
+          <li>
+            <a class="extra-card" href="#" aria-label="Sheet Music — Browse method books, solo pieces, and ensemble music">
+              <span class="extra-emoji" aria-hidden="true">🎼</span>
+              <h3>Sheet Music</h3>
+              <p>Method books, solo pieces, scales workbooks, and full band & orchestra scores for all levels.</p>
+            </a>
+          </li>
+          <li>
+            <a class="extra-card" href="#" aria-label="Reeds — Browse clarinet, saxophone, and oboe reeds">
+              <span class="extra-emoji" aria-hidden="true">🪵</span>
+              <h3>Reeds &amp; Mouthpieces</h3>
+              <p>Rico, Vandoren, and D'Addario reeds for clarinet, saxophone, oboe, and bassoon in all strengths.</p>
+            </a>
+          </li>
+          <li>
+            <a class="extra-card" href="#" aria-label="Bows and Strings — Browse violin, viola, cello, and bass">
+              <span class="extra-emoji" aria-hidden="true">🎻</span>
+              <h3>Bows &amp; Strings</h3>
+              <p>Brazilwood to carbon fiber bows, rosin, and replacement strings for every string instrument and budget.</p>
+            </a>
+          </li>
+          <li>
+            <a class="extra-card" href="#" aria-label="Cases and Bags — Browse instrument cases">
+              <span class="extra-emoji" aria-hidden="true">🎒</span>
+              <h3>Cases &amp; Bags</h3>
+              <p>Durable gig bags and hard cases for instruments of all sizes. Protect your investment on and off stage.</p>
+            </a>
+          </li>
+          <li>
+            <a class="extra-card" href="#" aria-label="Metronomes and Tuners — Browse practice tools">
+              <span class="extra-emoji" aria-hidden="true">🎛️</span>
+              <h3>Tuners &amp; Metronomes</h3>
+              <p>Clip-on tuners, chromatic tuners, and metronomes to keep you in tune and in time during practice.</p>
+            </a>
+          </li>
+          <li>
+            <a class="extra-card" href="#" aria-label="Stands and Accessories — Browse music stands and instrument stands">
+              <span class="extra-emoji" aria-hidden="true">🎵</span>
+              <h3>Stands &amp; Accessories</h3>
+              <p>Music stands, instrument stands, valve oil, slide grease, cleaning kits, and care essentials.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- ── EXPERT HELP ── -->
+    <section class="help-section" aria-labelledby="help-heading">
+      <div class="help-inner">
+        <p class="section-tag" aria-hidden="true">We're here for you</p>
+        <h2 id="help-heading">Not sure where to <em>start?</em></h2>
+        <p class="help-desc">Our staff are working musicians. Whether you're a parent choosing a first instrument or a director ordering for your whole program, we'll help you find the right fit.</p>
+ 
+        <div class="help-options" role="list" aria-label="Ways to get help">
+          <div class="help-card" role="listitem">
+            <span class="help-icon" aria-hidden="true">💬</span>
+            <h3>Live Chat</h3>
+            <p>Talk to a musician on our staff — available Mon–Sat, 9am–6pm CST.</p>
+            <a href="#" class="btn-help">Start a Chat</a>
+          </div>
+          <div class="help-card" role="listitem">
+            <span class="help-icon" aria-hidden="true">📞</span>
+            <h3>Call Us</h3>
+            <p>Speak with an expert directly at <a href="tel:+18005551234" style="color:var(--gold-lt);">1-800-555-1234</a>.</p>
+            <a href="tel:+18005551234" class="btn-help">Call Now</a>
+          </div>
+          <div class="help-card" role="listitem">
+            <span class="help-icon" aria-hidden="true">🎓</span>
+            <h3>Instrument Guide</h3>
+            <p>Our free guide helps parents & students pick the right instrument for band or orchestra.</p>
+            <a href="#" class="btn-help">Read the Guide</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── NEWSLETTER / FORM ── -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="section-inner">
+        <div class="newsletter-inner">
+          <div class="newsletter-box">
+            <p class="section-tag" aria-hidden="true">Stay in the know</p>
+            <h2 id="newsletter-heading">Join our <em>music community</em></h2>
+            <p>Get updates on new instruments, rental specials, and practice tips tailored to your level. No spam — ever.</p>
+ 
+            <form
+              id="newsletter-form"
+              novalidate
+              aria-label="Newsletter sign-up form"
+              onsubmit="handleSubmit(event)"
+            >
+              <div class="form-row" style="margin-bottom:1rem;">
+                <div class="field-group">
+                  <label for="fn">
+                    First name
+                    <span class="req-mark" aria-hidden="true">*</span>
+                    <span class="sr-only">(required)</span>
+                  </label>
+                  <input
+                    id="fn" name="first-name" type="text"
+                    class="input-field" placeholder="e.g. Jordan"
+                    autocomplete="given-name"
+                    required aria-required="true"
+                    aria-describedby="fn-error"
+                  />
+                  <p id="fn-error" class="error-msg" role="alert" aria-live="assertive">Please enter your first name.</p>
+                </div>
+                <div class="field-group">
+                  <label for="email">
+                    Email address
+                    <span class="req-mark" aria-hidden="true">*</span>
+                    <span class="sr-only">(required)</span>
+                  </label>
+                  <input
+                    id="email" name="email" type="email"
+                    class="input-field" placeholder="e.g. jordan@email.com"
+                    autocomplete="email"
+                    required aria-required="true"
+                    aria-describedby="email-error email-hint"
+                  />
+                  <p id="email-hint" class="field-hint">Format: name@example.com</p>
+                  <p id="email-error" class="error-msg" role="alert" aria-live="assertive">Please enter a valid email address (e.g. name@example.com).</p>
+                </div>
+              </div>
+ 
+              <div class="field-group" style="margin-bottom:1.5rem;">
+                <label for="level">
+                  I am a…
+                  <span class="req-mark" aria-hidden="true">*</span>
+                  <span class="sr-only">(required)</span>
+                </label>
+                <select
+                  id="level" name="level"
+                  class="select-field"
+                  required aria-required="true"
+                  aria-describedby="level-error"
+                >
+                  <option value="" disabled selected>Select your experience level</option>
+                  <option value="parent">Parent of a beginning student</option>
+                  <option value="student-beginner">Beginning student (grade 4–8)</option>
+                  <option value="student-advanced">Advancing student (high school / college)</option>
+                  <option value="adult-amateur">Adult amateur musician</option>
+                  <option value="professional">Professional musician</option>
+                  <option value="director">Band / Orchestra director</option>
+                </select>
+                <p id="level-error" class="error-msg" role="alert" aria-live="assertive">Please select your experience level.</p>
+              </div>
+ 
+              <div class="form-actions">
+                <button type="submit" class="btn-navy" style="min-height:48px; padding:0.8rem 2rem;">
+                  Subscribe — Free
+                </button>
+                <p class="form-note">
+                  <span aria-hidden="true">*</span>
+                  <span class="sr-only">Fields marked with an asterisk are</span>
+                  Required. Unsubscribe anytime.
+                </p>
+              </div>
+            </form>
+ 
+            <div id="form-success" role="status" aria-live="polite">
+              ✓ You're subscribed! Welcome to the Resonance community.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- ── FOOTER ── -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-name">Resonance Music Supply</p>
+          <p class="footer-tagline">Serving band and orchestra musicians from first lesson to final bow since 1994. Family-owned, educator-trusted.</p>
+        </div>
+        <nav aria-label="Shop by level">
+          <h4>By Level</h4>
+          <ul role="list">
+            <li><a href="#">Beginner Students</a></li>
+            <li><a href="#">Advancing Players</a></li>
+            <li><a href="#">Professionals</a></li>
+            <li><a href="#">Directors &amp; Schools</a></li>
+            <li><a href="#">Rental Program</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Shop by instrument">
+          <h4>Instruments</h4>
+          <ul role="list">
+            <li><a href="#">Strings</a></li>
+            <li><a href="#">Brass</a></li>
+            <li><a href="#">Woodwinds</a></li>
+            <li><a href="#">Percussion</a></li>
+            <li><a href="#">Piano &amp; Keys</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Resources">
+          <h4>Resources</h4>
+          <ul role="list">
+            <li><a href="#">Instrument Guide</a></li>
+            <li><a href="#">Sheet Music</a></li>
+            <li><a href="#">Repair Services</a></li>
+            <li><a href="#">School Accounts</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Support links">
+          <h4>Support</h4>
+          <ul role="list">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </nav>
+      </div>
+ 
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Crescendo Music Supply. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility Statement</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+ 
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
