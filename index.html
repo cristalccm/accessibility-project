@@ -2,601 +2,321 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crescendo Music Supply — Band, Orchestra & Beyond</title>
-  <meta name="description" content="Instruments, sheet music, and accessories for beginner band and orchestra students, advancing players, and seasoned professionals. Expert guidance at every level." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
- <link rel="stylesheet" href="assets/css/style.css">
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sugar Petal Bakery — Fresh Handcrafted Pastries &amp; Cakes</title>
+  <meta name="description" content="Sugar Petal is a small bakery offering handcrafted pastries, artisan breads, and custom cakes. Open Tuesday–Saturday, 7am–6pm at 24 Petal Lane."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
- 
-  <!-- SKIP TO MAIN -->
-  <a class="skip-link" href="#main-content">Skip to main content</a>
- 
-  <!-- ANNOUNCEMENT -->
-  <div role="region" aria-label="Store announcement">
-    <p class="announce-bar">
-      🎼 Back-to-school instrument rentals now available — <a href="#rental">Learn more</a> &nbsp;|&nbsp; Free shipping on orders $60+
-    </p>
+
+  <!-- SKIP LINK (keyboard / screen reader accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HOURS ANNOUNCEMENT BAR -->
+  <div role="banner" class="hours-strip" aria-label="Store hours and location">
+    <span aria-hidden="true">🕐</span> Open Tue–Sat · 7am – 6pm
+    <span aria-hidden="true"> | </span>
+    <span aria-hidden="true">📍</span> 24 Petal Lane, Downtown
   </div>
- 
-  <!-- HEADER -->
-  <header>
-    <div class="header-top">
-      <a href="/" class="nav-logo" aria-label="Crescendo Music Supply — Home">
-        <span class="logo-word">Crescendo</span>
-        <span class="logo-sub">Music Supply</span>
-      </a>
- 
-      <div class="header-search" role="search">
-        <label for="site-search" class="sr-only">Search instruments, sheet music, and accessories</label>
-        <span class="search-icon" aria-hidden="true">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        </span>
-        <input
-          id="site-search"
-          type="search"
-          class="search-input"
-          placeholder="Search instruments, brands, sheet music…"
-          autocomplete="off"
-          aria-label="Search products"
-        />
+
+  <!-- PRIMARY NAVIGATION -->
+  <header class="site-header" role="banner">
+    <nav aria-label="Primary navigation">
+       <a href="index.html" class="logo-link" aria-label="Sugar Petal Bakery home">
+    <img
+      src="assets/img/ChatGPT Image Apr 19, 2026, 05_25_27 PM.png"
+      alt="Sugar Petal Bakery logo"
+      class="site-logo"
+    />
+  </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#order" class="nav-cta">Order Now</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button
+        class="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul role="list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#order">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <p class="hero-tag" aria-label="Daily offering">
+          <span aria-hidden="true">✨</span> Baked fresh every morning
+        </p>
+        <h1 id="hero-heading">
+          Life is <em>sweeter</em> with a little flour &amp; love
+        </h1>
+        <p>
+          Handcrafted pastries, artisan breads, and dreamy cakes made with seasonal ingredients and a whole lot of heart.
+        </p>
+        <div class="btn-group">
+          <a href="#menu" class="btn-primary">Browse Our Menu</a>
+          <a href="#order" class="btn-secondary">Custom Orders <span aria-hidden="true">→</span><span class="sr-only">(jump to order section)</span></a>
+        </div>
       </div>
- 
-      <div class="header-actions">
-        <button class="btn-icon" type="button" aria-label="My account">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </button>
-        <button class="btn-icon" type="button" aria-label="View cart — 0 items" id="cart-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-          <span class="cart-badge" id="cart-badge" aria-hidden="true">0</span>
-        </button>
+
+      <div class="hero-visual" aria-hidden="true" role="presentation">
+        <div class="hero-cake-wrap">
+          <div class="hero-circle"></div>
+          <div class="hero-emoji">🎂</div>
+          <div class="deco-dot d1">🍪</div>
+          <div class="deco-dot d2">🥐</div>
+          <div class="deco-dot d3">🌸</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE (decorative, hidden from screen readers) -->
+    <div class="marquee-wrap" aria-hidden="true" role="presentation">
+      <div class="marquee-track">
+        <span>Croissants</span><span>Sourdough</span><span>Wedding Cakes</span>
+        <span>Macarons</span><span>Cinnamon Rolls</span><span>Banana Bread</span>
+        <span>Seasonal Tarts</span><span>Custom Cakes</span><span>Muffins</span>
+        <span>Croissants</span><span>Sourdough</span><span>Wedding Cakes</span>
+        <span>Macarons</span><span>Cinnamon Rolls</span><span>Banana Bread</span>
+        <span>Seasonal Tarts</span><span>Custom Cakes</span><span>Muffins</span>
       </div>
     </div>
- 
-    <!-- CATEGORY NAV -->
-    <nav class="nav-bar" aria-label="Product categories">
-      <div class="nav-bar-inner" role="list">
-        <a href="#strings" class="nav-link active" role="listitem">
-         Strings
-        </a>
-        <a href="#winds" class="nav-link" role="listitem">
-           Brass & Winds
-        </a>
-        <a href="#woodwinds" class="nav-link" role="listitem">
-           Woodwinds
-        </a>
-        <a href="#percussion" class="nav-link" role="listitem">
-           Percussion
-        </a>
-        <a href="#piano" class="nav-link" role="listitem">
-           Piano & Keys
-        </a>
-        <a href="#sheet-music" class="nav-link" role="listitem">
-           Sheet Music
-        </a>
-        <a href="#accessories" class="nav-link" role="listitem">
-           Accessories
-        </a>
-        <a href="#rental" class="nav-link" role="listitem">
-           Rentals
-        </a>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="section-header">
+        <p class="section-tag" aria-hidden="true"><span>🥐</span> Fresh Daily</p>
+        <h2 id="menu-heading">Our Signature Treats</h2>
+        <p>Every item is baked from scratch each morning. When we sell out, we sell out!</p>
       </div>
-    </nav>
-  </header>
- 
-  <!-- LIVE CART TOAST -->
-  <div id="cart-toast" role="status" aria-live="polite" aria-atomic="true"></div>
- 
-  <!-- MAIN -->
-  <main id="main-content" tabindex="-1">
- 
-    <!-- ── HERO ── -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <h1 id="hero-heading">
-            Every musician starts<br><em>somewhere.</em>
-          </h1>
-          <p class="hero-desc">
-            From a student's first rental violin to a professional's concert-grade oboe — we have the instruments, expertise, and support to guide every player at every stage.
-          </p>
-          <div class="hero-cta">
-            <a href="#audience-paths" class="btn-primary">
-              Find Your Fit
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
-            </a>
-            <a href="#rental" class="btn-outline-lt">
-              Rent an Instrument
-            </a>
-          </div>
-        </div>
- 
-        <!-- AUDIENCE PATH CARDS (hero) -->
-        <div class="hero-paths" aria-label="Shop by experience level">
-          <a href="#beginner" class="path-card" aria-label="Beginner students — Starter instruments and rentals">
-            <span class="path-icon" aria-hidden="true">🎒</span>
-            <div class="path-body">
-              <p class="path-label">Just starting out</p>
-              <p class="path-name">Beginner Students</p>
-              <p class="path-desc">Starter instruments, rentals, method books</p>
-            </div>
-            <span class="path-arrow" aria-hidden="true">›</span>
-          </a>
-          <a href="#intermediate" class="path-card" aria-label="Advancing players — Step-up instruments and lesson materials">
-            <span class="path-icon" aria-hidden="true">🎓</span>
-            <div class="path-body">
-              <p class="path-label">Growing musicians</p>
-              <p class="path-name">Advancing Players</p>
-              <p class="path-desc">Step-up instruments, lesson materials</p>
-            </div>
-            <span class="path-arrow" aria-hidden="true">›</span>
-          </a>
-          <a href="#pro" class="path-card" aria-label="Professional musicians — Professional instruments and accessories">
-            <span class="path-icon" aria-hidden="true">🏅</span>
-            <div class="path-body">
-              <p class="path-label">Seasoned performers</p>
-              <p class="path-name">Professionals</p>
-              <p class="path-desc">Professional-grade instruments, accessories</p>
-            </div>
-            <span class="path-arrow" aria-hidden="true">›</span>
-          </a>
-        </div>
-      </div>
+
+      <ul class="menu-grid" role="list" aria-label="Bakery menu items">
+        <li class="menu-card">
+          <span class="badge" aria-label="Label: Fan Favourite">Fan Fave</span>
+          <span class="menu-icon" aria-hidden="true" role="img">🥐</span>
+          <h3>Butter Croissant</h3>
+          <p>Laminated with French butter for 48 hours. Shatteringly crisp, impossibly flaky.</p>
+          <p class="menu-price"><span class="sr-only">Price: </span>$4.50</p>
+        </li>
+        <li class="menu-card">
+          <span class="menu-icon" aria-hidden="true" role="img">🎂</span>
+          <h3>Layer Cakes</h3>
+          <p>Rotating seasonal flavors — strawberry lemon, salted caramel, and dark chocolate.</p>
+          <p class="menu-price"><span class="sr-only">Price starting </span>from $38</p>
+        </li>
+        <li class="menu-card">
+          <span class="badge" aria-label="Label: New item">New</span>
+          <span class="menu-icon" aria-hidden="true" role="img">🍩</span>
+          <h3>Brioche Donuts</h3>
+          <p>Cloud-soft brioche dough, filled with pastry cream or jam, glazed to perfection.</p>
+          <p class="menu-price"><span class="sr-only">Price: </span>$5.00</p>
+        </li>
+        <li class="menu-card">
+          <span class="menu-icon" aria-hidden="true" role="img">🍞</span>
+          <h3>Sourdough Loaf</h3>
+          <p>72-hour cold ferment, scored and baked in a Dutch oven for an open crumb.</p>
+          <p class="menu-price"><span class="sr-only">Price: </span>$12.00</p>
+        </li>
+        <li class="menu-card">
+          <span class="badge" aria-label="Label: Seasonal item">Seasonal</span>
+          <span class="menu-icon" aria-hidden="true" role="img">🫐</span>
+          <h3>Blueberry Galette</h3>
+          <p>Rustic free-form pastry with local blueberries and a honey almond frangipane.</p>
+          <p class="menu-price"><span class="sr-only">Price: </span>$9.00</p>
+        </li>
+        <li class="menu-card">
+          <span class="menu-icon" aria-hidden="true" role="img">🍪</span>
+          <h3>Brown Butter Cookies</h3>
+          <p>Nutty, caramelized, gooey centers with a salted chocolate chunk swirl.</p>
+          <p class="menu-price"><span class="sr-only">Price: </span>$3.50</p>
+        </li>
+      </ul>
     </section>
- 
-    <!-- ── AUDIENCE PATHWAYS ── -->
-    <section id="audience-paths" class="paths-section" aria-labelledby="paths-heading">
-      <div class="section-inner">
-        <div class="section-header">
-          <h2 id="paths-heading">Find your <em>path</em></h2>
-          <p class="section-sub">Whether you're picking up your first instrument or performing on stage, we have the right gear and guidance for you.</p>
-        </div>
- 
-        <div class="paths-grid" role="list" aria-label="Musician experience levels">
- 
-          <article class="audience-card beginner" id="beginner" role="listitem" aria-labelledby="beg-title">
-            <span class="aud-emoji" aria-hidden="true">🎒</span>
-            <h2 id="beg-title" class="aud-title">Beginner Students</h2>
-            <p class="aud-desc">
-              New to band or orchestra? We make starting easy. Our student instruments are durable, playable, and priced for families. We also offer instrument rentals with the option to apply rent toward purchase.
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="about-inner">
+        <div class="about-stats" aria-label="Bakery highlights">
+          <div class="about-card">
+            <p class="big" aria-label="12 plus years baking">12+</p>
+            <p class="label">Years baking</p>
+          </div>
+          <div class="about-card about-card--sage">
+            <p class="big" aria-label="We use local grains" aria-hidden="false">
+              <span aria-hidden="true">🥖</span>
+              <span class="sr-only">Bread icon</span>
             </p>
-            <nav class="aud-links" aria-label="Beginner shopping links">
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Starter Instrument Rentals
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Beginner Band Packages
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Method Books & Practice Aids
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                School Supply Lists
-              </a>
-            </nav>
-          </article>
- 
-          <article class="audience-card intermediate" id="intermediate" role="listitem" aria-labelledby="int-title">
-            <span class="aud-emoji" aria-hidden="true">🎓</span>
-            <h2 id="int-title" class="aud-title">Advancing Players</h2>
-            <p class="aud-desc">
-              Ready to step up from a starter instrument? Improving your equipment can unlock new possibilities in tone and playability. Our staff helps you find the right upgrade at the right time.
-            </p>
-            <nav class="aud-links" aria-label="Advancing player shopping links">
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Step-Up Instruments
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Solo & Ensemble Music
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Upgraded Accessories
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Trade-In Program
-              </a>
-            </nav>
-          </article>
- 
-          <article class="audience-card professional" id="pro" role="listitem" aria-labelledby="pro-title">
-            <span class="aud-emoji" aria-hidden="true">🏅</span>
-            <h2 id="pro-title" class="aud-title">Professional Musicians</h2>
-            <p class="aud-desc">
-              We stock professional-grade instruments from top makers, alongside premium accessories and specialty items. Our woodwind and brass repair technicians are on staff for maintenance and custom setups.
-            </p>
-            <nav class="aud-links" aria-label="Professional musician shopping links">
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Professional Instruments
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Repair & Maintenance
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Premium Reeds & Strings
-              </a>
-              <a class="aud-link" href="#">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                Director Accounts
-              </a>
-            </nav>
-          </article>
- 
-        </div>
-      </div>
-    </section>
- 
-    <!-- ── INSTRUMENT CATEGORIES ── -->
-    <section id="strings" class="instr-section" aria-labelledby="instr-heading">
-      <div class="section-inner">
-        <div class="section-header">
-          <h3 id="instr-heading">Shop by <em>instrument</em></h3>
-          <p class="section-sub">Orchestral strings, concert band, jazz, and more — available for beginners through professionals.</p>
-        </div>
- 
-        <!-- Filter tabs -->
-        <div role="tablist" aria-label="Filter instruments by section" class="instr-tabs">
-          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="instr-all">All Sections</button>
-          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-strings">Strings</button>
-          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-brass">Brass</button>
-          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-woodwinds">Woodwinds</button>
-          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="instr-perc">Percussion</button>
-        </div>
- 
-        <ul id="instr-all" class="instr-grid" role="list" aria-label="All instrument categories">
-          <li>
-            <a class="instr-card" data-section="instr-strings" href="#" aria-label="Violin — 58 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true"><img src="https://images.unsplash.com/photo-1631541313073-ffe99712c629?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHZpb2xpbnxlbnwwfDB8MHx8fDI%3D" alt="violin" class="instr-img"></span>
-              <span class="instr-name">Violin</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">58 instruments</span>
-            </a>
-          </li>
-          <li>
-            <a class="instr-card" href="#" data-section="instr-strings" aria-label="Cello — 34 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true"><img src="https://images.unsplash.com/photo-1600067367958-0fb6911cf397?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNlbGxvfGVufDB8MHwwfHx8Mg%3D%3D" alt="cello" class="instr-img"></span>
-              <span class="instr-name">Cello</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">34 instruments</span>
-            </a>
-          </li>
-          <li>
-            <a class="instr-card" href="#" data-section="instr-brass"aria-label="Trumpet — 42 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true"><img src="https://images.unsplash.com/photo-1738932354194-ca31e87c5fc9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRydW1wZXR8ZW58MHwwfDB8fHwy" alt="trumpet" class="instr-img"></span>
-              <span class="instr-name">Trumpet</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">42 instruments</span>
-            </a>
-          </li>
-          <li>
-            <a class="instr-card" data-section="instr-woodwinds" href="#" aria-label="Clarinet — 47 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true"><img src="https://images.unsplash.com/photo-1600771488491-c22d42a9347d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xhcmluZXR8ZW58MHwwfDB8fHwy" alt="clarinet" class="instr-img"></span>
-              <span class="instr-name">Clarinet</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">47 instruments</span>
-            </a>
-          </li>
-          <li>
-            <a class="instr-card" data-section="instr-woodwinds" href="#" aria-label="Flute — 39 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true"><span><img src="https://images.unsplash.com/photo-1666209911836-68c8c4b26e48?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zmx1dGV8ZW58MHwwfDB8fHwy" alt="flute" class="instr-img"></span>
-              <span class="instr-name">Flute</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">39 instruments</span>
-            </a>
-          </li>
-          <li>
-            <a class="instr-card" data-section="instr-woodwinds" href="#" aria-label="Saxophone — 31 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true"><img src="https://images.unsplash.com/photo-1698151923964-22149b074f8e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2F4b3Bob25lfGVufDB8MHwwfHx8Mg%3D%3D" alt="saxophone" class="instr-img"></span>
-              <span class="instr-name">Saxophone</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">31 instruments</span>
-            </a>
-          </li>
-          <li>
-            <a class="instr-card"data-section="instr-perc" href="#" aria-label="Percussion — 25 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true"><img src="https://images.unsplash.com/photo-1548895342-cbe56c360e2a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyY3Vzc2lvbnxlbnwwfDB8MHx8fDI%3D" alt="timpani" class="instr-img"></span>
-              <span class="instr-name">Percussion</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">25 instruments</span>
-            </a>
-          </li>
-          <li>
-            <a class="instr-card" data-section="instr-brass" href="#" aria-label="French Horn — 18 instruments, beginner to professional">
-              <span class="instr-emoji" aria-hidden="true">  <img src="https://images.unsplash.com/photo-1725673853632-fa4a9bd6c6a9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlbmNoJTIwaG9ybnxlbnwwfDB8MHx8fDI%3D" alt="French horn" class="instr-img"></span>
-              <span class="instr-name">French Horn</span>
-              <span class="instr-range">Beg → Pro</span>
-              <span class="instr-count">18 instruments</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
- 
-    
-    <!-- ── RENTAL BANNER ── -->
-    <section id="rental" class="rental-banner" aria-labelledby="rental-heading">
-      <div class="rental-inner">
-        <div>
-          <span class="rental-badge-top" aria-label="Popular with parents">Popular with parents &amp; directors</span>
-          <h3 id="rental-heading">Instrument rentals — <em>simple &amp; flexible</em></h3>
-          <p>Perfect for new students who may switch instruments. Rent month-to-month with no long-term commitment, and apply your payments toward purchasing the instrument if you love it.</p>
-          <div class="rental-features" aria-label="Rental program benefits">
-            <div class="rental-feat">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              <span>Free maintenance coverage</span>
-            </div>
-            <div class="rental-feat">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              <span>Switch instruments anytime</span>
-            </div>
-            <div class="rental-feat">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              <span>Rent applies toward purchase</span>
-            </div>
-            <div class="rental-feat">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              <span>Cancel anytime, no fees</span>
-            </div>
+            <p class="label">Local grains</p>
+          </div>
+          <div class="about-card about-card--warm">
+            <p class="big" aria-label="Over 300 cakes baked per year">300+</p>
+            <p class="label">Cakes per year</p>
+          </div>
+          <div class="about-card">
+            <p class="big" aria-hidden="true">💛</p>
+            <p class="label">Made with love</p>
           </div>
         </div>
-        <a href="#" class="btn-rental" style="flex-shrink:0; white-space:nowrap;">
-          Start a Rental
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
-        </a>
-      </div>
-    </section>
- 
-    <!-- ── EXTRAS: SHEET MUSIC & ACCESSORIES ── -->
-    <section id="sheet-music" class="extras-section" aria-labelledby="extras-heading">
-      <div class="section-inner">
-        <div class="section-header">
-          <h3 id="extras-heading">Music, books &amp; <em>accessories</em></h3>
-          <p class="section-sub">Everything a musician needs beyond the instrument itself.</p>
-        </div>
- 
-        <ul class="extras-grid" role="list" aria-label="Music accessories and materials">
-          <li>
-            <a class="extra-card" href="#" aria-label="Sheet Music — Browse method books, solo pieces, and ensemble music">
-              <span class="extra-emoji" aria-hidden="true">🎼</span>
-              <h3>Sheet Music</h3>
-              <p>Method books, solo pieces, scales workbooks, and full band & orchestra scores for all levels.</p>
-            </a>
-          </li>
-          <li>
-            <a class="extra-card" href="#" aria-label="Reeds — Browse clarinet, saxophone, and oboe reeds">
-              <span class="extra-emoji" aria-hidden="true">🪵</span>
-              <h3>Reeds &amp; Mouthpieces</h3>
-              <p>Rico, Vandoren, and D'Addario reeds for clarinet, saxophone, oboe, and bassoon in all strengths.</p>
-            </a>
-          </li>
-          <li>
-            <a class="extra-card" href="#" aria-label="Bows and Strings — Browse violin, viola, cello, and bass">
-              <span class="extra-emoji" aria-hidden="true">🎻</span>
-              <h3>Bows &amp; Strings</h3>
-              <p>Brazilwood to carbon fiber bows, rosin, and replacement strings for every string instrument and budget.</p>
-            </a>
-          </li>
-          <li>
-            <a class="extra-card" href="#" aria-label="Cases and Bags — Browse instrument cases">
-              <span class="extra-emoji" aria-hidden="true">🎒</span>
-              <h3>Cases &amp; Bags</h3>
-              <p>Durable gig bags and hard cases for instruments of all sizes. Protect your investment on and off stage.</p>
-            </a>
-          </li>
-          <li>
-            <a class="extra-card" href="#" aria-label="Metronomes and Tuners — Browse practice tools">
-              <span class="extra-emoji" aria-hidden="true">🎛️</span>
-              <h3>Tuners &amp; Metronomes</h3>
-              <p>Clip-on tuners, chromatic tuners, and metronomes to keep you in tune and in time during practice.</p>
-            </a>
-          </li>
-          <li>
-            <a class="extra-card" href="#" aria-label="Stands and Accessories — Browse music stands and instrument stands">
-              <span class="extra-emoji" aria-hidden="true">🎵</span>
-              <h3>Stands &amp; Accessories</h3>
-              <p>Music stands, instrument stands, valve oil, slide grease, cleaning kits, and care essentials.</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
- 
-    <!-- ── EXPERT HELP ── -->
-    <section class="help-section" aria-labelledby="help-heading">
-      <div class="help-inner">
-        <p class="section-tag" aria-hidden="true">We're here for you</p>
-        <h2 id="help-heading">Not sure where to <em>start?</em></h2>
-        <p class="help-desc">Our staff are working musicians. Whether you're a parent choosing a first instrument or a director ordering for your whole program, we'll help you find the right fit.</p>
- 
-        <div class="help-options" role="list" aria-label="Ways to get help">
-          <div class="help-card" role="listitem">
-            <span class="help-icon" aria-hidden="true">💬</span>
-            <h3>Live Chat</h3>
-            <p>Talk to a musician on our staff — available Mon–Sat, 9am–6pm CST.</p>
-            <a href="#" class="btn-help">Start a Chat</a>
-          </div>
-          <div class="help-card" role="listitem">
-            <span class="help-icon" aria-hidden="true">📞</span>
-            <h3>Call Us</h3>
-            <p>Speak with an expert directly at 1-800-555-1234.</p>
-            <a href="tel:+18005551234" class="btn-help">Call Now</a>
-          </div>
-          <div class="help-card" role="listitem">
-            <span class="help-icon" aria-hidden="true">🎓</span>
-            <h3>Instrument Guide</h3>
-            <p>Our free guide helps parents & students pick the right instrument for band or orchestra.</p>
-            <a href="#" class="btn-help">Read the Guide</a>
-          </div>
+
+        <div class="about-text">
+          <h2 id="about-heading">Hello, we're <em>Sugar Petal Bakery</em></h2>
+          <p>Started in a tiny farmhouse kitchen in 2012, Sugar Petal grew from a weekend farmers' market booth into your neighborhood's favorite bakery.</p>
+          <p>We believe baked goods should taste like someone made them just for you — because someone did. Everything is hand-shaped, slow-fermented, and finished by our small team of passionate bakers.</p>
+          <ul class="perks" aria-label="Our values and offerings">
+            <li>Locally sourced dairy and seasonal fruit</li>
+            <li>No artificial additives or preservatives</li>
+            <li>Custom cake &amp; event orders welcome</li>
+            <li>Vegan and gluten-friendly options available</li>
+          </ul>
         </div>
       </div>
     </section>
- 
-    <!-- ── NEWSLETTER / FORM ── -->
-    <section class="newsletter-section" aria-labelledby="newsletter-heading">
-      <div class="section-inner">
-        <div class="newsletter-inner">
-          <div class="newsletter-box">
-            <p class="section-tag" aria-hidden="true">Stay in the know</p>
-            <h4 id="newsletter-heading">Join our <em>music community</em></h4>
-            <p>Get updates on new instruments, rental specials, and practice tips tailored to your level. No spam — ever.</p>
- 
-            <form
-              id="newsletter-form"
-              novalidate
-              aria-label="Newsletter sign-up form"
-              onsubmit="handleSubmit(event)"
-            >
-              <div class="form-row" style="margin-bottom:1rem;">
-                <div class="field-group">
-                  <label for="fn">
-                    First name
-                    <span class="req-mark" aria-hidden="true">*</span>
-                    <span class="sr-only">(required)</span>
-                  </label>
-                  <input
-                    id="fn" name="first-name" type="text"
-                    class="input-field" placeholder="e.g. Jordan"
-                    autocomplete="given-name"
-                    required aria-required="true"
-                    aria-describedby="fn-error"
-                  />
-                  <p id="fn-error" class="error-msg" role="alert" aria-live="assertive">Please enter your first name.</p>
-                </div>
-                <div class="field-group">
-                  <label for="email">
-                    Email address
-                    <span class="req-mark" aria-hidden="true">*</span>
-                    <span class="sr-only">(required)</span>
-                  </label>
-                  <input
-                    id="email" name="email" type="email"
-                    class="input-field" placeholder="e.g. jordan@email.com"
-                    autocomplete="email"
-                    required aria-required="true"
-                    aria-describedby="email-error email-hint"
-                  />
-                  <p id="email-error" class="error-msg" role="alert" aria-live="assertive">Please enter a valid email address (e.g. name@example.com).</p>
-                </div>
-              </div>
- 
-              <div class="field-group" style="margin-bottom:1.5rem;">
-                <label for="level">
-                  I am a…
-                  <span class="req-mark" aria-hidden="true">*</span>
-                  <span class="sr-only">(required)</span>
-                </label>
-                <select
-                  id="level" name="level"
-                  class="select-field"
-                  required aria-required="true"
-                  aria-describedby="level-error"
-                >
-                  <option value="" disabled selected>Select your experience level</option>
-                  <option value="parent">Parent of a beginning student</option>
-                  <option value="student-beginner">Beginning student (grade 4–8)</option>
-                  <option value="student-advanced">Advancing student (high school / college)</option>
-                  <option value="adult-amateur">Adult amateur musician</option>
-                  <option value="professional">Professional musician</option>
-                  <option value="director">Band / Orchestra director</option>
-                </select>
-                <p id="level-error" class="error-msg" role="alert" aria-live="assertive">Please select your experience level.</p>
-              </div>
- 
-              <div class="form-actions">
-                <button type="submit" class="btn-navy" style="min-height:48px; padding:0.8rem 2rem;">
-                  Subscribe — Free
-                </button>
-                <p class="form-note">
-                  <span aria-hidden="true">*</span>
-                  <span class="sr-only">Fields marked with an asterisk are</span>
-                  Required. Unsubscribe anytime.
-                </p>
-              </div>
-            </form>
- 
-            <div id="form-success" role="status" aria-live="polite">
-              ✓ You're subscribed! Welcome to the Resonance community.
-            </div>
-          </div>
-        </div>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="section-header">
+        <p class="section-tag" aria-hidden="true"><span>💬</span> What people say</p>
+        <h2 id="reviews-heading">Straight from our regulars</h2>
+        <p>We're blushing — but we'll let them do the talking.</p>
       </div>
+
+      <ul class="testi-grid" role="list" aria-label="Customer reviews">
+        <li class="testi-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <p>Their sourdough has ruined every other bread for me. I drive 25 minutes just to grab a loaf before they sell out. Worth every mile.</p>
+            <footer>
+              <cite class="testi-author">
+                <span class="testi-avatar" aria-hidden="true">🙋‍♀️</span>
+                <span>
+                  <strong class="testi-name">Margaret L.</strong>
+                  <span class="testi-loc">Regular since 2016</span>
+                </span>
+              </cite>
+            </footer>
+          </blockquote>
+        </li>
+        <li class="testi-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <p>Got our wedding cake from Sugar Petal and it was honestly the centerpiece of the whole reception. Guests are still talking about it!</p>
+            <footer>
+              <cite class="testi-author">
+                <span class="testi-avatar" aria-hidden="true">💍</span>
+                <span>
+                  <strong class="testi-name">Priya &amp; Tom</strong>
+                  <span class="testi-loc">Wedding, June 2024</span>
+                </span>
+              </cite>
+            </footer>
+          </blockquote>
+        </li>
+        <li class="testi-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <p>The brown butter cookies are a spiritual experience. I've attempted to replicate them at home twice and failed spectacularly both times. Just buy them.</p>
+            <footer>
+              <cite class="testi-author">
+                <span class="testi-avatar" aria-hidden="true">👨‍🍳</span>
+                <span>
+                  <strong class="testi-name">Daniel R.</strong>
+                  <span class="testi-loc">Self-proclaimed foodie</span>
+                </span>
+              </cite>
+            </footer>
+          </blockquote>
+        </li>
+      </ul>
     </section>
- 
+
+    <!-- ORDER CTA -->
+    <section class="cta-section" id="order" aria-labelledby="order-heading">
+      <p class="cta-emojis" aria-hidden="true">🌸🎂🥐</p>
+      <h2 id="order-heading">Ready to place a custom order?</h2>
+      <p>Whether it's a birthday cake, a weekly bread subscription, or a corporate dessert spread — we'd love to bake for you.</p>
+      <a href="mailto:hello@crumandbloom.com" class="btn-primary" aria-label="Email us to place a custom order">
+        Get in Touch <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
   </main>
- 
-  <!-- ── FOOTER ── -->
-  <footer role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div>
-          <h5 class="footer-brand-name">Crescendo Music Supply</h5>
-          <p class="footer-tagline">Serving band and orchestra musicians from first lesson to final bow since 1994. Family-owned, educator-trusted.</p>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo footer-logo" aria-label="Sugar Petal Bakery">
+          <img src="assets/img/ChatGPT Image Apr 19, 2026, 05_25_27 PM.png" alt="Sugar Petal Bakery Logo" class="site-logo">
+         </div>
+        <p>A little bakery with a big heart, baking beautiful things since 2012.</p>
+        <div class="social-row" role="list" aria-label="Social media links">
+          <a href="#" role="listitem" class="social-btn" aria-label="Visit us on Instagram">
+            <span aria-hidden="true">📸</span>
+          </a>
+          <a href="#" role="listitem" class="social-btn" aria-label="Visit us on Twitter">
+            <span aria-hidden="true">🐦</span>
+          </a>
+          <a href="#" role="listitem" class="social-btn" aria-label="Visit us on Pinterest">
+            <span aria-hidden="true">📌</span>
+          </a>
         </div>
-        <nav aria-label="Shop by level">
-          <h6>By Level</h6>
-          <ul role="list">
-            <li><a href="#">Beginner Students</a></li>
-            <li><a href="#">Advancing Players</a></li>
-            <li><a href="#">Professionals</a></li>
-            <li><a href="#">Directors &amp; Schools</a></li>
-            <li><a href="#">Rental Program</a></li>
-          </ul>
-        </nav>
-        <nav aria-label="Shop by instrument">
-          <h6>Instruments</h6>
-          <ul role="list">
-            <li><a href="#">Strings</a></li>
-            <li><a href="#">Brass</a></li>
-            <li><a href="#">Woodwinds</a></li>
-            <li><a href="#">Percussion</a></li>
-            <li><a href="#">Piano &amp; Keys</a></li>
-          </ul>
-        </nav>
-        <nav aria-label="Resources">
-          <h6>Resources</h6>
-          <ul role="list">
-            <li><a href="#">Instrument Guide</a></li>
-            <li><a href="#">Sheet Music</a></li>
-            <li><a href="#">Repair Services</a></li>
-            <li><a href="#">School Accounts</a></li>
-          </ul>
-        </nav>
-        <nav aria-label="Support links">
-          <h4>Support</h4>
-          <ul role="list">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Shipping &amp; Returns</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Accessibility</a></li>
-          </ul>
-        </nav>
       </div>
- 
-      <div class="footer-bottom">
-        <p class="footer-copy">© 2026 Crescendo Music Supply. All rights reserved.</p>
-        <nav class="footer-legal" aria-label="Legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Accessibility Statement</a>
-        </nav>
-      </div>
+
+      <nav aria-label="Footer quick links">
+        <h3>Quick Links</h3>
+        <ul role="list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#order">Custom Orders</a></li>
+        </ul>
+      </nav>
+
+      <address>
+        <h3>Visit Us</h3>
+        <ul role="list">
+          <li>24 Petal Lane, Downtown</li>
+          <li>Tuesday–Saturday, 7am–6pm</li>
+          <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+          <li><a href="mailto:hello@crumandbloom.com">hello@crumandbloom.com</a></li>
+        </ul>
+      </address>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Sugar Petal Bakery · Made with <span aria-label="love">🩷</span> and a lot of butter</p>
     </div>
   </footer>
- 
 
-<script src="assets/js/script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
