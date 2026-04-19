@@ -122,8 +122,8 @@ a:hover { color: var(--rose); }
 
 /* ── HOURS STRIP ── */
 .hours-strip {
-  background: var(--lavender);
-  color: var(--white);
+  background: var(--blush);
+  color: var(--text);
   text-align: center;
   padding: 0.6rem 1rem;
   font-size: 0.85rem;
@@ -519,7 +519,7 @@ section { padding: var(--space-2xl) 5%; }
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: var(--lavender);
+  background:#915dfa;
   color: var(--white);
   /* Contrast: white on --sage ≈ 4.6:1 ✓ */
   font-size: 0.7rem;
