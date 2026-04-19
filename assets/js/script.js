@@ -35,17 +35,29 @@
       });
     });
  
-    // ── TAB BUTTONS ──────────────────────────────────────
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.closest('.instr-tabs').querySelectorAll('.tab-btn').forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-      });
+   // ── TAB BUTTONS ──────────────────────────────────────
+const instrCards = document.querySelectorAll('.instr-card');
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.instr-tabs').querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
     });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+
+    const filter = btn.getAttribute('aria-controls');
+
+    instrCards.forEach(card => {
+      if (filter === 'instr-all' || card.dataset.section === filter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
  
     // ── FORM VALIDATION ──────────────────────────────────
     function handleSubmit(e) {
