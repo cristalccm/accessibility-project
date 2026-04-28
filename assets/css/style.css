@@ -519,7 +519,7 @@ section { padding: var(--space-2xl) 5%; }
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background:#915dfa;
+  background:#522e99;
   color: var(--white);
   /* Contrast: white on --sage ≈ 4.6:1 ✓ */
   font-size: 0.7rem;
