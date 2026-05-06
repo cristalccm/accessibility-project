@@ -146,7 +146,7 @@ nav {
 }
 
 .logo-tagline {
-  font-size: .68rem;
+  font-size: .8rem;
   font-weight: 700;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -381,9 +381,9 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
   padding: .28rem .85rem; border-radius: var(--r-pill); margin-bottom: .6rem;
   box-shadow: 0 3px 0 rgba(0,0,0,.12);
 }
-.infants  .prog-age  { background: var(--blue);   color: #fff; }
-.toddlers .prog-age  { background: var(--purple);  color: #fff; }
-.preschool .prog-age { background: var(--coral);   color: #fff; }
+.infants  .prog-age  { background: var(--blue-deep);   color: #fff; }
+.toddlers .prog-age  { background: var(--purple-deep);  color: #fff; }
+.preschool .prog-age { background: var(--coral-deep);   color: #fff; }
 .prog-body { padding: 1.5rem 2rem 2rem; flex: 1; display: flex; flex-direction: column; }
 .prog-desc { font-size: .89rem; color: var(--text-muted); line-height: 1.78; margin-bottom: 1.3rem; flex: 1; }
 .prog-features { display: flex; flex-direction: column; gap: .55rem; margin-bottom: 1.6rem; }
@@ -402,11 +402,11 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
   border: 3px solid; cursor: pointer; min-height: 46px;
   transition: background .2s, color .2s, transform .2s, box-shadow .2s; text-decoration: none;
 }
-.infants .btn-prog   { border-color: var(--blue);   color: var(--blue);   box-shadow: 0 4px 0 var(--blue-deep); }
+.infants .btn-prog   { border-color: var(--blue-deep);   color: var(--blue-deep);   box-shadow: 0 4px 0 var(--blue-deep); }
 .infants .btn-prog:hover  { background: var(--blue);   color: #fff; transform: translateY(-2px); }
-.toddlers .btn-prog  { border-color: var(--purple);  color: var(--purple); box-shadow: 0 4px 0 var(--purple-deep); }
+.toddlers .btn-prog  { border-color: var(--purple-deep);  color: var(--purple-deep); box-shadow: 0 4px 0 var(--purple-deep); }
 .toddlers .btn-prog:hover { background: var(--purple);  color: #fff; transform: translateY(-2px); }
-.preschool .btn-prog { border-color: var(--coral);   color: var(--coral);  box-shadow: 0 4px 0 var(--coral-deep); }
+.preschool .btn-prog { border-color: var(--coral-deep);   color: var(--coral-deep);  box-shadow: 0 4px 0 var(--coral-deep); }
 .preschool .btn-prog:hover { background: var(--coral); color: #fff; transform: translateY(-2px); }
  
 /* ─── MONTESSORI SPOTLIGHT ───────────────────────── */
@@ -453,7 +453,7 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
   border: 2px solid rgba(0,0,0,.06); box-shadow: 0 2px 6px rgba(0,0,0,.08);
 }
 .pillar h4 { font-family: var(--font-head); font-size: .95rem; font-weight: 800; color: var(--blue-deep); margin-bottom: .25rem; }
-.pillar p  { font-size: .8rem; color: var(--text-muted); line-height: 1.65; }
+.pillar p  { font-size: .8rem; color:var(--text); line-height: 1.65; }
 .montessori-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .m-card {
   border: 3px solid; border-radius: var(--r-lg);
@@ -744,7 +744,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.footer-column h4 {
+.footer-column h3 {
   font-size: .75rem;
   font-weight: 900;
   letter-spacing: .12em;
@@ -792,7 +792,7 @@ footer {
 }
 /* ─── MONTESSORI QUOTE BLOCKS ────────────────────── */
 .mq-strip {
-  background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 50%, var(--coral) 100%);
+  background-color: var(--bg);
   padding: 4.5rem 1.5rem; position: relative; overflow: hidden;
 }
 .mq-strip::before {
@@ -811,7 +811,7 @@ footer {
 .mq-leaf { font-size: 2.2rem; display: block; margin-bottom: 1.2rem; opacity: .95; animation: wiggle 3s ease-in-out infinite; }
 .mq-strip blockquote {
   font-family: var(--font-head); font-size: clamp(1.35rem, 2.8vw, 2rem);
-  font-weight: 800; font-style: italic; color: #fff; line-height: 1.48;
+  font-weight: 800; font-style: italic; color:var(--blue-deep); line-height: 1.48;
   text-shadow: 0 2px 14px rgba(0,0,0,.18);
 }
 .mq-strip blockquote::before { content: '\201C'; margin-right: .12em; opacity: .6; }
@@ -819,7 +819,7 @@ footer {
 .mq-strip cite {
   display: block; margin-top: 1.35rem;
   font-family: var(--font-body); font-size: .82rem; font-style: normal; font-weight: 900;
-  letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.7);
+  letter-spacing: .18em; text-transform: uppercase; color: var(--blue-deep);
 }
  
 /* ─── SR ONLY ────────────────────────────────────── */
