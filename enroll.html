@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enroll — Sunshine Ridge Child Care Center</title>
+  <meta name="description" content="Schedule a free tour at Sunshine Ridge Child Care Center in Benton, AR. Enroll your child in infant, toddler, or preschool care today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+ 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+ 
+  <div role="region" aria-label="Announcement">
+    <p class="top-bar">
+      🌟 Now enrolling for Fall 2026 — spots fill fast!
+    </p>
+  </div>
+ 
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Sunshine Ridge Child Care Center — Home">
+        <div class="logo-sun" aria-hidden="true">☀️</div>
+        <div class="logo-text">
+          <span class="logo-name">Sunshine Ridge</span>
+          <span class="logo-tagline">Child Care Center</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"      class="nav-link">Home</a></li>
+        <li><a href="programs.html"   class="nav-link">Programs</a></li>
+        <li><a href="daily-life.html" class="nav-link">Daily Life</a></li>
+        <li><a href="families.html"   class="nav-link">Families</a></li>
+        <li><a href="enroll.html"     class="nav-link" aria-current="page">Enroll</a></li>
+      </ul>
+      <a href="#tour-form" class="btn-enroll">
+        Schedule a Tour
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+    </nav>
+  </header>
+ 
+  <main id="main-content" tabindex="-1">
+ 
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="page-hero-inner">
+        <p class="page-hero-eyebrow" aria-hidden="true">📋 Get started</p>
+        <h1 id="page-heading">Ready to <span>join us?</span></h1>
+        <p class="page-hero-desc">Tours are free and take about 30 minutes. Come see the classrooms, meet the teachers, and feel the Sunshine Ridge difference for yourself.</p>
+      </div>
+    </section>
+ 
+    <!-- ENROLLMENT -->
+    <section class="enrollment" aria-labelledby="enroll-heading">
+      <div class="section-inner enrollment-inner">
+ 
+        <div class="enroll-info">
+          <p class="section-tag" aria-hidden="true">How it works</p>
+          <h2 id="enroll-heading">Four simple <span>steps</span></h2>
+          <p class="section-sub">From your first hello to your child's first day — we make enrollment easy.</p>
+ 
+          <ol class="enroll-steps mt-2" aria-label="Enrollment steps">
+            <li class="enroll-step">
+              <span class="step-num" aria-label="Step 1">1</span>
+              <div class="step-body">
+                <h4>Submit the tour request</h4>
+                <p>Fill out the form and we'll reach out within 1 business day to confirm your visit time.</p>
+              </div>
+            </li>
+            <li class="enroll-step">
+              <span class="step-num" aria-label="Step 2">2</span>
+              <div class="step-body">
+                <h4>Tour the center</h4>
+                <p>See every classroom, meet the teachers, and ask anything you want. No pressure.</p>
+              </div>
+            </li>
+            <li class="enroll-step">
+              <span class="step-num" aria-label="Step 3">3</span>
+              <div class="step-body">
+                <h4>Complete enrollment</h4>
+                <p>Reserve your child's spot with enrollment paperwork and a small deposit.</p>
+              </div>
+            </li>
+            <li class="enroll-step">
+              <span class="step-num" aria-label="Step 4">4</span>
+              <div class="step-body">
+                <h4>Start day!</h4>
+                <p>We'll schedule a short settling-in visit before your child's first full day so the transition is smooth.</p>
+              </div>
+            </li>
+          </ol>
+ 
+          <!-- Quick contact -->
+          <div class="info-box mt-25">
+            <p class="info-box-title"><span>📞</span> Prefer to call?</p>
+            <div class="info-rows">
+              <div class="info-row"><span class="info-row-label">Phone</span><span class="info-row-val"><a href="tel:+15015550234" class="contact-link">(501) 555-0234</a></span></div>
+              <div class="info-row"><span class="info-row-label">Email</span><span class="info-row-val"><a href="mailto:hello@sunshineridgecc.com" class="contact-link">hello@sunshineridgecc.com</a></span></div>
+              <div class="info-row"><span class="info-row-label">Hours</span><span class="info-row-val">Mon–Fri, 6:30 am – 6 pm</span></div>
+              <div class="info-row"><span class="info-row-label">Location</span><span class="info-row-val">456 Sunshine Drive, Benton, AR</span></div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- FORM -->
+        <div class="form-box" role="region" aria-labelledby="form-heading" id="tour-form">
+          <p class="form-title" id="form-heading">Schedule a Free Tour</p>
+          <p class="form-subtitle">Takes about 2 minutes. We'll do the rest.</p>
+ 
+          <form id="enroll-form" novalidate aria-label="Tour request form" onsubmit="submitForm(event)">
+            <div class="form-grid">
+ 
+              <div class="field">
+                <label for="p-name">Your name <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                <input id="p-name" type="text" class="input" placeholder="First &amp; last name"
+                  autocomplete="name" required aria-required="true" aria-describedby="p-name-err" />
+                <p id="p-name-err" class="err-msg" role="alert" aria-live="assertive">Please enter your name.</p>
+              </div>
+ 
+              <div class="field">
+                <label for="c-name">Child's name <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                <input id="c-name" type="text" class="input" placeholder="First name is fine"
+                  required aria-required="true" aria-describedby="c-name-err" />
+                <p id="c-name-err" class="err-msg" role="alert" aria-live="assertive">Please enter your child's name.</p>
+              </div>
+ 
+              <div class="field">
+                <label for="email">Email address <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                <input id="email" type="email" class="input" placeholder="you@email.com"
+                  autocomplete="email" required aria-required="true" aria-describedby="email-err email-hint" />
+                <p id="email-hint" class="field-hint">We'll confirm your tour via email.</p>
+                <p id="email-err" class="err-msg" role="alert" aria-live="assertive">Please enter a valid email (e.g. name@example.com).</p>
+              </div>
+ 
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" type="tel" class="input" placeholder="(501) 555-0100"
+                  autocomplete="tel" aria-describedby="phone-hint" />
+                <p id="phone-hint" class="field-hint">Optional — we may call to confirm.</p>
+              </div>
+ 
+              <div class="field">
+                <label for="c-age">Child's age <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                <select id="c-age" class="select" required aria-required="true" aria-describedby="c-age-err">
+                  <option value="" disabled selected>Select age range</option>
+                  <option value="6w-6m">6 weeks – 6 months</option>
+                  <option value="6m-1y">6 months – 1 year</option>
+                  <option value="1-2">1 – 2 years</option>
+                  <option value="2-3">2 – 3 years</option>
+                  <option value="3-4">3 – 4 years</option>
+                  <option value="4-5">4 – 5 years</option>
+                </select>
+                <p id="c-age-err" class="err-msg" role="alert" aria-live="assertive">Please select your child's age.</p>
+              </div>
+ 
+              <div class="field">
+                <label for="program">Interested program</label>
+                <select id="program" class="select">
+                  <option value="" disabled selected>Not sure yet</option>
+                  <option value="infant">Infant Room</option>
+                  <option value="toddler">Toddler Room</option>
+                  <option value="preschool-ft">Preschool — Full Day</option>
+                  <option value="preschool-pt">Preschool — Part Day</option>
+                </select>
+              </div>
+ 
+              <div class="field full">
+                <label for="start">Desired start date</label>
+                <input id="start" type="date" class="input" aria-describedby="start-hint" />
+                <p id="start-hint" class="field-hint">Optional — helps us check availability for your preferred start.</p>
+              </div>
+ 
+              <div class="field full">
+                <label for="notes">Questions or notes for our team</label>
+                <textarea id="notes" class="textarea" placeholder="Anything we should know before your visit — allergies, special needs, specific questions…"></textarea>
+              </div>
+ 
+            </div>
+ 
+            <div class="form-submit">
+              <button type="submit" class="btn-submit">
+                Request a Tour
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+              <p class="form-privacy">
+                <span aria-hidden="true">*</span><span class="sr-only">Fields marked with an asterisk are</span> Required.
+                Your information stays private.
+              </p>
+            </div>
+          </form>
+ 
+          <div id="form-success" role="status" aria-live="polite">
+            ☀️ Thank you! We'll be in touch within one business day to confirm your tour. We can't wait to meet your family!
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+<footer role="contentinfo">
+  <div class="footer-inner">
+
+    <div class="footer-main">
+
+      <div class="footer-column">
+        <p class="footer-brand">☀️ Sunshine Ridge</p>
+
+        <p class="footer-tagline">
+          Childcare & preschool for Benton families since 2008.
+        </p>
+
+        <div class="footer-contact">
+          <a href="tel:+15015550234">(501) 555-0234</a>
+          <a href="mailto:hello@sunshineridgecc.com">
+            hello@sunshineridgecc.com
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+
+        <nav class="footer-nav" aria-label="Site links">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="daily-life.html">Daily Life</a>
+          <a href="families.html">Families</a>
+          <a href="enroll.html">Enroll</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h4>Resources</h4>
+
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="families.html#faq">FAQ</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; 2026 Sunshine Ridge Child Care Center.
+        All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+ 
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
