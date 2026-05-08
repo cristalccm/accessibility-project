@@ -58,3 +58,12 @@ function submitForm(e) {
   document.getElementById('enroll-form').style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
 }
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+
+  const isOpen = navLinks.classList.contains("active");
+  hamburger.setAttribute("aria-expanded", isOpen);
+});
