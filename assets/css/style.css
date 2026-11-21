@@ -553,7 +553,6 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
   box-shadow: 0 12px 0 rgba(0,0,0,.08), var(--shadow-md);
   transform: translateY(-6px);
 }
-.why-card:hover { box-shadow: 0 12px 0 rgba(0,0,0,.08), var(--shadow-md); transform: translateY(-6px); }
 .why-card:nth-child(1) { background: var(--blue-pale);   border-color: #a8d8f8; }
 .why-card:nth-child(2) { background: var(--green-pale);  border-color: #88e0b8; }
 .why-card:nth-child(3) { background: var(--sun-pale);    border-color: #f0d870; }
@@ -743,7 +742,7 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
   border: 3px solid; cursor: pointer; min-height: 46px;
   transition: background .2s, color .2s, transform .2s, box-shadow .2s; text-decoration: none;
 }
-.infants .btn-prog   { border-color: var(--blue-deep);   color: var();   box-shadow: 0 4px 0 var(--blue-deep); }
+.infants .btn-prog   { border-color: var(--blue-deep);   color: var(--blue-deep);   box-shadow: 0 4px 0 var(--blue-deep); }
 .infants .btn-prog:hover  { background: var(--blue);   color: #fff; transform: translateY(-2px); }
 .toddlers .btn-prog  { border-color: var(--purple-deep);  color: var(--purple-deep); box-shadow: 0 4px 0 var(--purple-deep); }
 .toddlers .btn-prog:hover { background: var(--purple);  color: #fff; transform: translateY(-2px); }
@@ -989,10 +988,25 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
 }
 .info-box-title span { font-size: 1.35rem; }
 .info-rows { display: flex; flex-direction: column; gap: .5rem; }
-.info-row { display: flex; justify-content: space-between; font-size: .87rem; padding: .4rem 0; border-bottom: 2px dashed var(--border); }
+.info-row {  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: .87rem;
+  padding: .4rem 0;
+  border-bottom: 2px dashed var(--border);}
 .info-row:last-child { border-bottom: none; }
-.info-row-label { color: var(--text-muted); font-weight: 700; }
-.info-row-val   { color: var(--text); font-weight: 900; }
+.info-row-label {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.info-row-val {
+  color: var(--text);
+  font-weight: 900;
+  text-align: right;
+}
 .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
 .stat-box {
   border: 3px solid var(--border); border-radius: var(--r-md); padding: 1.2rem;
@@ -1346,11 +1360,16 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
 .enroll-steps { display: flex; flex-direction: column; gap: 1.3rem; margin-top: 2rem; }
 .enroll-step  { display: flex; gap: 1rem; align-items: flex-start; }
 .step-num {
-  width: 40px; height: 40px; border-radius: 50%;
-  ; color:var(--blue);
-  font-family: var(--font-head); font-size: 3rem; font-weight: 900;
-  display: flex; align-items: center; justify-content: center;
- ;
+   width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--blue);
+  font-family: var(--font-head);
+  font-size: 3rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .enroll-step:nth-child(2) .step-num {color: var(--coral); }
 .enroll-step:nth-child(3) .step-num { color: var(--purple-deep)}
@@ -1414,6 +1433,7 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
   background: #fff; border: 3px solid var(--border); border-radius: var(--r-lg);
   overflow: hidden; box-shadow: var(--shadow-fun);
   transition: border-color .2s, transform .22s;
+   align-self: start;
 }
 .faq-item:hover { transform: translateY(-3px); }
 .faq-item:nth-child(odd)  { border-color: #a8d8f8; }
@@ -1463,7 +1483,7 @@ h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 800; color:
   align-items: center;
   justify-content: center;
 
-  align-self: center 5%;
+  align-self: center;
 
   flex-shrink: 0;
 
@@ -1608,16 +1628,58 @@ footer {
   font-family: var(--font-body); font-size: .82rem; font-style: normal; font-weight: 900;
   letter-spacing: .18em; text-transform: uppercase; color: var(--blue-deep);
 }
-/* ─── HAMBURGER MENU ────────────────────────────────────── */
+/* HAMBURGER MENU */
 .hamburger {
   display: none;
-  background: rgba(255,255,255,.18);
-  color: #fff;
-  border: 2px solid rgba(255,255,255,.3);
-  border-radius: 14px;
-  font-size: 1.5rem;
-  padding: .45rem .75rem;
+  position: relative;
+  width: 48px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 22px 2px;
   cursor: pointer;
+  transition: background-size .3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22px;
+  height: 2px;
+  margin-left: -11px;
+  margin-top: -1px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform .3s ease;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(6px);
+}
+
+/* Animate into X */
+.hamburger.active {
+  background-size: 0 2px;
+}
+
+.hamburger.active::before {
+  transform: rotate(45deg);
+}
+
+.hamburger.active::after {
+  transform: rotate(-45deg);
 }
 /* ─── SR ONLY ────────────────────────────────────── */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
@@ -1659,11 +1721,10 @@ footer {
     display: none;
   }
 
-  .hamburger {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+.hamburger {
+  display: inline-flex;
+}
 
   .nav-links {
     position: absolute;
@@ -1943,4 +2004,15 @@ footer {
 .mt-2  { margin-top: 2rem; }
 .mt-25 { margin-top: 2.5rem; }
 .contact-link { color:var(--blue-deep); font-weight: 800; }
+/* ── REDUCED MOTION ─────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
  

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Enroll — Sunshine Ridge Child Care Center</title>
-  <meta name="description" content="Schedule a free tour at Sunshine Ridge Child Care Center in Benton, AR. Enroll your child in infant, toddler, or preschool care today." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Schedule a free tour at Sunshine Ridge Child Care Center in Benton, AR. Enroll your child in infant, toddler, or preschool care today." >
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="assets/css/style.css" >
 </head>
 <body>
  
@@ -29,7 +29,7 @@
     <span class="logo-tagline">Child Care Center</span>
   </div>
 </div>
-      <ul class="nav-links" role="list">
+      <ul class="nav-links" >
         <li><a href="index.html"      class="nav-link">Home</a></li>
         <li><a href="programs.html"   class="nav-link">Programs</a></li>
         <li><a href="our-day.html" class="nav-link">Our Day</a></li>
@@ -37,10 +37,11 @@
         <li><a href="enroll.html"     class="nav-link" aria-current="page">Enroll</a></li>
         <li><a href="enroll.html" class="nav-link nav-enroll-mobile">
     Enroll Now
-  </a></li>
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+  </li>
       </ul>
       <button class="hamburger" aria-label="Open menu" aria-expanded="false">
-  ☰
 </button>
     </nav>
   </header>
@@ -81,28 +82,28 @@
  
           <ol class="enroll-steps mt-2" aria-label="Enrollment steps">
             <li class="enroll-step">
-              <span class="step-num" aria-label="Step 1">1</span>
+              <span class="step-num" >1</span>
               <div class="step-body">
                 <h3>Submit the tour request</h3>
                 <p>Fill out the form and we'll reach out within 1 business day to confirm your visit time.</p>
               </div>
             </li>
             <li class="enroll-step">
-              <span class="step-num" aria-label="Step 2">2</span>
+              <span class="step-num" >2</span>
               <div class="step-body">
                 <h3>Tour the center</h3>
                 <p>See every classroom, meet the teachers, and ask anything you want. No pressure.</p>
               </div>
             </li>
             <li class="enroll-step">
-              <span class="step-num" aria-label="Step 3">3</span>
+              <span class="step-num" >3</span>
               <div class="step-body">
                 <h3>Complete enrollment</h3>
                 <p>Reserve your child's spot with enrollment paperwork and a small deposit.</p>
               </div>
             </li>
             <li class="enroll-step">
-              <span class="step-num" aria-label="Step 4">4</span>
+              <span class="step-num" >4</span>
               <div class="step-body">
                 <h3>Start day!</h3>
                 <p>We'll schedule a short settling-in visit before your child's first full day so the transition is smooth.</p>
@@ -132,36 +133,36 @@
  
               <div class="field">
                 <label for="p-name">Your name <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
-                <input id="p-name" type="text" class="input" placeholder="First &amp; last name"
-                  autocomplete="name" required aria-required="true" aria-describedby="p-name-err" />
-                <p id="p-name-err" class="err-msg" role="alert" aria-live="assertive">Please enter your name.</p>
+                <input id="p-name" name="parent_name" type="text" class="input" placeholder="First &amp; last name"
+                  autocomplete="name" required aria-describedby="p-name-err" >
+                <p id="p-name-err" class="err-msg" role="alert">Please enter your name.</p>
               </div>
  
               <div class="field">
                 <label for="c-name">Child's name <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
-                <input id="c-name" type="text" class="input" placeholder="First name is fine"
-                  required aria-required="true" aria-describedby="c-name-err" />
-                <p id="c-name-err" class="err-msg" role="alert" aria-live="assertive">Please enter your child's name.</p>
+                <input id="c-name" name="child_name" type="text" class="input" placeholder="First name is fine"
+                  required aria-describedby="c-name-err" >
+                <p id="c-name-err" class="err-msg" role="alert">Please enter your child's name.</p>
               </div>
  
               <div class="field">
                 <label for="email">Email address <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
-                <input id="email" type="email" class="input" placeholder="you@email.com"
-                  autocomplete="email" required aria-required="true" aria-describedby="email-err email-hint" />
+                <input id="email" name="email" type="email" class="input" placeholder="you@email.com"
+                  autocomplete="email" required aria-describedby="email-err email-hint" >
                 <p id="email-hint" class="field-hint">We'll confirm your tour via email.</p>
-                <p id="email-err" class="err-msg" role="alert" aria-live="assertive">Please enter a valid email (e.g. name@example.com).</p>
+                <p id="email-err" class="err-msg" role="alert">Please enter a valid email (e.g. name@example.com).</p>
               </div>
  
               <div class="field">
                 <label for="phone">Phone number</label>
-                <input id="phone" type="tel" class="input" placeholder="(501) 555-0100"
-                  autocomplete="tel" aria-describedby="phone-hint" />
+                <input id="phone" name="phone" type="tel" class="input" placeholder="(501) 555-0100"
+                  autocomplete="tel" aria-describedby="phone-hint" >
                 <p id="phone-hint" class="field-hint">Optional — we may call to confirm.</p>
               </div>
  
               <div class="field">
                 <label for="c-age">Child's age <span class="req" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
-                <select id="c-age" class="select" required aria-required="true" aria-describedby="c-age-err">
+                <select id="c-age" name="child_age" class="select" required aria-describedby="c-age-err">
                   <option value="" disabled selected>Select age range</option>
                   <option value="6w-6m">6 weeks – 6 months</option>
                   <option value="6m-1y">6 months – 1 year</option>
@@ -170,12 +171,12 @@
                   <option value="3-4">3 – 4 years</option>
                   <option value="4-5">4 – 5 years</option>
                 </select>
-                <p id="c-age-err" class="err-msg" role="alert" aria-live="assertive">Please select your child's age.</p>
+                <p id="c-age-err" class="err-msg" role="alert" >Please select your child's age.</p>
               </div>
  
               <div class="field">
                 <label for="program">Interested program</label>
-                <select id="program" class="select">
+                <select id="program" name="program" class="select">
                   <option value="" disabled selected>Not sure yet</option>
                   <option value="infant">Infant Room</option>
                   <option value="toddler">Toddler Room</option>
@@ -186,13 +187,13 @@
  
               <div class="field full">
                 <label for="start">Desired start date</label>
-                <input id="start" type="date" class="input" aria-describedby="start-hint" />
+                <input id="start" name="start_date" type="date" class="input" aria-describedby="start-hint" >
                 <p id="start-hint" class="field-hint">Optional — helps us check availability for your preferred start.</p>
               </div>
  
               <div class="field full">
                 <label for="notes">Questions or notes for our team</label>
-                <textarea id="notes" class="textarea" placeholder="Anything we should know before your visit — allergies, special needs, specific questions…"></textarea>
+                <textarea id="notes" name="notes" class="textarea" placeholder="Anything we should know before your visit — allergies, special needs, specific questions…"></textarea>
               </div>
  
             </div>
@@ -209,9 +210,11 @@
             </div>
           </form>
  
-          <div id="form-success" role="status" aria-live="polite">
-            ☀️ Thank you! We'll be in touch within one business day to confirm your tour. We can't wait to meet your family!
-          </div>
+   <div id="form-success" role="status" aria-live="polite" tabindex="-1">
+  ☀️ Thank you! Your tour request has been successfully
+  submitted in this demonstration. We can't wait to meet
+  your family!
+</div>
         </div>
       </div>
     </section>
