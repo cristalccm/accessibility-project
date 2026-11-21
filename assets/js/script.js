@@ -38,6 +38,9 @@ checks.forEach(c => {
   const el = document.getElementById(c.id);
   const err = document.getElementById(c.err);
 
+  // Skip fields that don't exist on the current page
+  if (!el || !err) return;
+
   el.addEventListener(c.id === 'c-age' ? 'change' : 'input', () => {
     const pass = c.test(el.value);
 
@@ -47,7 +50,6 @@ checks.forEach(c => {
     }
   });
 });
-
 function submitForm(e) {
   e.preventDefault();
 
